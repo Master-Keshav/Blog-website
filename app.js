@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const ejs = require('ejs');
 const _ = require('lodash');
 const mongoose = require('mongoose');
-
+const cool = require('cool-ascii-faces');
 
 const port = process.env.PORT || 3000;
 const app = express();
@@ -13,6 +13,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(express.static("public"));
 app.set('view engine', 'ejs');
+app.get('/cool', (req, res) => res.send(cool()));
 
 
 
