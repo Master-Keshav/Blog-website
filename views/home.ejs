@@ -1,0 +1,15 @@
+<%-include('partials/header')-%>
+<!-- <h1>Home</h1>
+<p><%=content%></p> -->
+
+<% arr.forEach(function(posts){ %>
+    <h1><%= posts.title %></h1>
+    <p><%= (posts.content).substring(0,100)+" ..."; %> <a href="/post/<%=posts.title%>">Read More</a> </p>
+<% }) %>
+
+
+<!-- <% for(var i=0; i<arr.length; i++){ %>
+    <h1><%=arr[i].title%></h1>
+    <p><%=arr[i].content%></p>
+<% } %> -->
+<%-include('partials/footer')-%>
