@@ -1,0 +1,8 @@
+body parser
+cool ascii faces
+dotenv
+ejs
+env
+express
+lodash
+nodemon
